@@ -21,6 +21,12 @@
 	<div class="container">
 		<h1>Consulta de Pokemon</h1>
 		<form action="SQL_consultarPokemon.php" method="post">
+			<label for="ps">PS:</label>
+			<input type="text" id="ps" name="ps" placeholder="Puntos de Salud..">
+			<input type="submit" value="Buscar" action>
+			<form id="filtro" action="SQL_consultarPokemon2.php" method="post">
+			<label for="NumeroPokedex">Numero Pokedex:</label>
+			<input type="text" id="NumeroPokedex" name="NumeroPokedex" placeholder="Numero Pokedex..">
 			<label for="nombre">Nombre:</label>
 			<input type="text" id="nombre" name="nombre" placeholder="Nombre del pokemon..">
 			<label for="tipo">Tipo:</label>
@@ -45,9 +51,48 @@
 				<option value="Veneno">Veneno</option>
 				<option value="Volador">Volador</option>
 			</select>
-			<label for="ps">PS:</label>
-			<input type="text" id="ps" name="ps" placeholder="Puntos de Salud..">
-			<input type="submit" value="Buscar" action>
+
+			<label for="maxataque">Ataque:</label>
+			<input type="text" id="maxataque" name="maxataque" placeholder="Maximo ataque..">
+			<input type="text" id="minataque" name="minataque" placeholder="Minimo ataque..">
+
+			<label for="maxdefensa">Defensa:</label>
+			<input type="text" id="maxdefensa" name="maxdefensa" placeholder="Maximo defensa..">
+			<input type="text" id="mindefensa" name="mindefensa" placeholder="Minimo defensa..">
+
+			<label for="maxvelocidad">Velocidad:</label>
+			<input type="text" id="maxvelocidad" name="maxvelocidad" placeholder="Maximo velocidad..">
+			<input type="text" id="minvelocidad" name="minvelocidad" placeholder="Minimo velocidad..">
+
+			<label for="maxPS">PS:</label>
+			<input type="text" id="maxPS" name="maxPS" placeholder="Maximo PS..">
+			<input type="text" id="minPS" name="minPS" placeholder="Minimo PS..">
+			</select>
+
+			<label for="orden">Ordenar por:</label>
+			<select id="orden" name="orden">
+				<option value="">--</option>
+				<option value="p.nombre ASC">Nombre Ascendente</option>
+				<option value="p.nombre DESC">Nombre Descendente</option>
+				<option value="p.numero_pokedex ASC">Numero Pokedex Ascendente</option>
+				<option value="p.numero_pokedex DESC">Numero Pokedex Descendente</option>
+				<option value="p.altura ASC">Altura Ascendente</option>
+				<option value="p.altura DESC">Altura Descendente</option>
+				<option value="p.peso ASC">Peso Ascendente</option>
+				<option value="p.peso DESC">Peso Descendente</option>
+				<option value="eb.ps ASC">PS Ascendente</option>
+				<option value="eb.ps DESC">PS Descendente</option>
+				<option value="eb.ataque ASC">Ataque Ascendente</option>
+				<option value="eb.ataque DESC">Ataque Descendente</option>
+				<option value="eb.defensa ASC">Defensa Ascendente</option>
+				<option value="eb.defensa DESC">Defensa Descendente</option>
+				<option value="eb.velocidad ASC">Velocidad Ascendente</option>
+				<option value="eb.velocidad DESC">Velocidad Descendente</option>
+			</select>
+
+			<input type="submit" value="Buscar">
+
+		</form>
 		</form>
 		<!..
 	</div>

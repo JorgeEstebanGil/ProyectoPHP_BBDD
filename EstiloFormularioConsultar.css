@@ -25,10 +25,8 @@ form{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    width: 300px;
     /*Tamaño del formulario*/
-    width: 10%;
-    height: 50%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;

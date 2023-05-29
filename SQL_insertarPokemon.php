@@ -1,6 +1,11 @@
 <html>
 	<link rel="icon" type="image/x-icon" href="/imagenes/pokeball.png">
 	<link rel="stylesheet" href="EstiloFormularioInsertar.css">
+	<script>
+		function redireccionar(){
+			window.location.href ="SQL_consultarPokemon2.php"
+		}
+	</script>
 	<body>
 <?php
 //echo "conectando a database";
@@ -20,7 +25,7 @@ $nombre = $_POST['nombre'];
 $peso = $_POST['peso'];
 $altura = $_POST['altura'];
 
-$sql = 'INSERT INTO pokemon (numero_pokedex, nombre, peso, altura) VALUES ('.$num_pokedex.', "'.$nombre.'", '.$peso.', '.$altura.')';
+$sql = 'INSERT INTO pokemon (numero_pokedex, nombre, peso, altura) VALUES ('.$num_pokedex.', "'.$nombre.'", "'.$peso.'", "'.$altura.'")';
 echo $sql;
 
 if (!$num_pokedex) {
@@ -40,17 +45,18 @@ if (!$peso) {
 }
 if (!$altura) {
 	echo 'Por favor, introduzca una altura';
-	echo '<input id="volver" type	="button" value="Volver" onclick="location.href="FormularioInsertar.html"">';
+	echo '<input id="volver" type="button" value="Volver" onclick="location.href="index.php"">';
 	exit;
 }
 
 $result = mysqli_query($mysqli, $sql);
+mysqli_query($mysqli, $sql);
 //include 'Trigger.php';
 if(!$result) {
 	die('Invalid query: ' . mysql_error());
 }else{
 	echo "<div>Pokemon creado correctamente \n";
-	echo '<input id="Ver" type="button" value="Ver Pokemon" onclick="location.href="MasInfo.php?nombre='.$nombre.'">';
+	echo '<input id="Ver" type="button" value="Ver Pokemon" onclick="redireccionar()"></div>';
 }
 mysqli_close($mysqli);
 ?>
