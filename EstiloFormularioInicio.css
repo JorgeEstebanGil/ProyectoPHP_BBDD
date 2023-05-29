@@ -1,0 +1,62 @@
+body{
+    background-color: lightblue;
+    /*Imagen de fondo*/
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png);
+    /*Tamaño de la imagen*/
+    background-size: 80%;
+    /*Centrar la imagen*/
+    background-position: center;
+    /*No repetir la imagen*/
+    background-repeat: no-repeat;
+    /*Altura de la imagen*/
+    height: 100vh;
+    /*Quitar margenes*/
+    margin: 0;
+    /*Quitar scroll*/
+    overflow: hidden;
+    /*Color de la letra*/
+    color: #ffffff;
+    /*Usa FUENTE divertida*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+h1{
+    font-size: 1.5rem;
+    color: #dc0707;
+    /*Usa FUENTE divertida*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+form{
+    /*Colocar en el centro de la web*/
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    /*Tamaño del formulario*/
+    width: 40%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #09c0f8ad;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+}
+
+table{
+    padding: auto;
+}
+
+input{
+    width: 80%;
+    height: 30px;
+    background-color: #ffffff9e;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+

@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Consultar Pokemon</title>
+    <link rel="icon" type="image/x-icon" href="/imagenes/pokeball.png">
+    <link rel="stylesheet" href="EstiloFormularioConsultar.css">
+</head>
+<body>
+    <form id="datos" name="datos" method="post" action="SQL_consultarPokemon2.php">
+        <tr>
+            <td>Numero Pokedex</td>
+            <td><input type="number" min="1" name="id" id="id"></td>
+        </tr>
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" name="nombre" id="nombre"></td>
+            </tr>
+            <tr>
+                <td>Tipo</td>
+                <td><select name="tipo" id="tipo">
+                    <option> </option>
+                    <option value="Agua">Agua</option>
+                    <option value="Bicho">Bicho</option>
+                    <option value="Dragon">Dragon</option>
+                    <option value="Electrico">Electrico</option>
+                    <option value="Fantasma">Fantasma</option>
+                    <option value="Fuego">Fuego</option>
+                    <option value="Hielo">Hielo</option>
+                    <option value="Lucha">Lucha</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Planta">Planta</option>
+                    <option value="Psiquico">Psiquico</option>
+                    <option value="Roca">Roca</option>
+                    <option value="Tierra">Tierra</option>
+                    <option value="Veneno">Veneno</option>
+                    <option value="Volador">Volador</option>
+
+                  </select></td>
+            </tr>
+            <tr>
+                <td>Ataque</td>
+                <td><input type="number" min="25" max="250" name="MINataque" id="MINataque" placeholder="Minimo"></td>
+                <td><input type="number" min="25" max="250" name="MAXataque" id="MAXataque" placeholder="Maximo"></td>
+            </tr>
+            <tr>
+                <td>Defensa</td>
+                <td><input type="number" min="25" max="250" name="MINdefensa" id="MINdefensa" placeholder="Minimo"></td>
+                <td><input type="number" min="25" max="250" name="MAXdefensa" id="MAXdefensa" placeholder="Maximo"></td>
+            </tr>
+            <tr>
+                <td>Ataque Especial</td>
+                <td><input type="number" min="25" max="250" name="especial" id="especial"></td>
+            </tr>
+            <tr>
+                <td>Velocidad</td>
+                <td><input type="number" min="25" max="250" name="minVelocidad" id="minVelocidad" placeholder="Minimo"></td>
+                <td><input type="number" min="25" max="250" name="maxVelocidad" id="maxVelocidad" placeholder="Maximo"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Enviar"></td>
+            </tr>  
+    </form>
+    <input id="volver" type="button" value="Volver" onclick="location.href='index.php'" >
+
+</body>
+
+</html>

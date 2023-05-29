@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Insertar Pokemon</TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<script type="text/javascript">
+function enviar()
+{
+  datos.action="01-Basico.php";
+  datos.submit();
+}
+</script>
+
+</HEAD>
+<link rel="icon" type="image/x-icon" href="/imagenes/pokeball.png">
+<link rel="stylesheet" href="EstiloFormularioInsertar.css">
+<BODY>
+<form id="datos" name="datos" method="post" action="SQL_insertarPokemon.php">
+
+    <tr><td>Numero Pokedex</td>
+        <td><input type="number" name="num_pokedex" id="num_pokedex"></td>
+    </tr>
+
+   <tr><td>Nombre</td>
+       <td><input type="text" name="nombre" id="nombre"></td>
+   </tr>
+
+   <tr><td>Peso</td>
+       <td><input type="text" name="peso" id="peso"></td>
+   </tr>
+   <tr><td>Altura</td>
+       <td><input type="text" name="altura" id="altura"></td>
+    </tr>
+
+    <tr><input type="submit" value="Enviar"></tr>
+
+</form>
+
+<td><input id="volver" type="button" value="Volver" onclick="location.href='index.php'" ></td>
+</BODY>
+</HTML>

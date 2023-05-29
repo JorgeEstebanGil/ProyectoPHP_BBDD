@@ -1,0 +1,162 @@
+body{
+    background-color: lightblue;
+    /*Imagen de fondo*/
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png);
+    /*Tamaño de la imagen*/
+    background-size: 80%;
+    /*Centrar la imagen*/
+    background-position: center;
+    /*No repetir la imagen*/
+    background-repeat: no-repeat;
+    /*Altura de la imagen*/
+    height: 100vh;
+    /*Quitar margenes*/
+    margin: 0;
+    /*Quitar scroll*/
+    overflow: scroll;
+    /*Color de la letra*/
+    color: #ffffff;
+    /*Usa FUENTE divertida*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+.card{
+    position: relative;
+    /*Tamaño de la carta*/
+    width: 30%;
+}
+table {
+    text-align: left;
+    line-height: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    border: 2px solid #1c7aed;
+    width: 30%;
+    margin: 50px auto;
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
+    /*Color y Fuentes*/
+    color: #1c7aed;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+/*Centrar imagen dentro de la tabla*/
+td img{
+    position: center;
+    display: block;
+    margin: auto;
+}
+th:first-child, td:first-child {
+    padding: 0 0 0 20px;
+    font-weight: bold;
+}
+
+th {
+    font-weight: 500;
+}
+
+thead tr:last-child th {
+    border-bottom: 3px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #e3e1e1;
+    cursor: default;
+    border: solid 1px #000;
+}
+
+tbody td {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td:hover {
+    border-bottom: 1px solid #000;
+}
+
+td:last-child {
+    text-align: center;
+    padding-right: 10px;
+}
+
+#data{
+    /*Color de fondo azul*/
+    background-color:#2e5cd2;
+    border-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    /*Fuentes*/
+    font-family: Helvetica;
+    color: #ffffff;
+}
+#volver{
+    position: absolute;
+    top: 10px;
+    left: 95%;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff9e;
+    border-radius: 100%;
+    padding: 5px;
+    cursor: pointer;
+    /*Fuentes*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+#mas_info{
+    /*Color de fondo azul*/
+    background-color:#2e5cd2;
+    border-radius: 10px;
+    border-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    /*Fuentes*/
+    font-family: Helvetica;
+    color: #ffffff;
+}
+#mas_info:hover{
+    /*Color de fondo azul*/
+    background-color:#1f5cf776;
+    /*Color de la letra*/
+    color: #ffffff;
+}
+
+#filtro{
+    /*Tamaño del formulario*/
+    padding: 10px;
+    background-color: #09c0f8ad;
+    border-radius: 15px;
+    
+    /*Fuentes*/
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+input[type=text]{
+    border-radius: 10px;
+    padding: 5px;
+    /*Fuentes*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+input[type=number]{
+    border-radius: 10px;
+    padding: 5px;
+    /*Fuentes*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+select{
+    border-radius: 10px;
+    padding: 5px;
+    /*Fuentes*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+/*Estilo solo del boton submit*/
+input[type="submit"]{
+    background-color: #ffffff9e;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    /*Fuentes*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+input[type="submit"]:hover{
+    background-color: #ffffff8e;
+    opacity: 1;
+    transform: scale(1.1);
+}

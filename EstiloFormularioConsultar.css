@@ -1,0 +1,97 @@
+body{
+    background-color: lightblue;
+    /*Imagen de fondo*/
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png);
+    /*Tamaño de la imagen*/
+    background-size: 80%;
+    /*Centrar la imagen*/
+    background-position: center;
+    /*No repetir la imagen*/
+    background-repeat: no-repeat;
+    /*Altura de la imagen*/
+    height: 100vh;
+    /*Quitar margenes*/
+    margin: 0;
+    /*Quitar scroll*/
+    overflow: hidden;
+    /*Color de la letra*/
+    color: #ffffff;
+    /*Usa FUENTE divertida*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+form{
+    /*Colocar en el centro de la web*/
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /*Tamaño del formulario*/
+    width: 10%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #09c0f8ad;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    text-align: center;
+    /*Fuentes*/
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+input[type=text]{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    /*Fuentes*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+input[type=number]{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    /*Fuentes*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+select{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    /*Fuentes*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+/*Estilo solo del boton submit*/
+input[type="submit"]{
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff9e;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    /*Fuentes*/
+    font-family: Helvetica, Arial, sans-serif;
+}
+input[type="submit"]:hover{
+    background-color: #ffffff8e;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/*Estilo solo del boton volver*/
+#volver{
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 95%;
+    background-color: #ffffff9e;
+    border-radius: 100%;
+    padding: 5px;
+    cursor: pointer;
+    /*Fuentes*/
+    font-family: Helvetica, Arial, sans-serif;
+}
