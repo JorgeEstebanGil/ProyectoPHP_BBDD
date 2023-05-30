@@ -22,7 +22,6 @@
     <td><input type="button" value="Insertar Pokemon" onclick="location.href='formularioInsertar.html'" ></td>
     <td><input type="button" value="Eliminar Pokemon" onclick="location.href='formularioEliminar.html'" ></td>
     <td><input type="button" value="Consultar Pokemon" onclick="location.href='formularioConsultar.html'" ></td>
-    <td><input type="button" value="Modificar Pokemon" onclick="location.href='formularioModificar.html'" ></td>
     </tr>
   </form>
 </body>

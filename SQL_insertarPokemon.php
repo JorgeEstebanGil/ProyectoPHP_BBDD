@@ -14,7 +14,7 @@ $mysqli = mysqli_connect("172.17.0.2", "root", "mysql01", "pokemondb");
 //echo "conectado a database";
 if (!$mysqli) {
 	echo "Error: No se pudo conectar a MySQL. \n" . PHP_EOL;
-	echo "errno de depuración: " . mysqli_connect_errno() . PHP_EOL;
+	echo "Error de depuración: " . mysqli_connect_errno() . PHP_EOL;
 	exit;
 }
     
@@ -25,7 +25,7 @@ $nombre = $_POST['nombre'];
 $peso = $_POST['peso'];
 $altura = $_POST['altura'];
 
-$sql = 'INSERT INTO pokemon (numero_pokedex, nombre, peso, altura) VALUES ('.$num_pokedex.', "'.$nombre.'", "'.$peso.'", "'.$altura.'")';
+$sql = 'INSERT INTO pokemon (numero_pokedex, nombre, peso, altura) VALUES ('.$num_pokedex.', "'.$nombre.'", '.$peso.', '.$altura.')';
 echo $sql;
 
 if (!$num_pokedex) {
@@ -48,16 +48,23 @@ if (!$altura) {
 	echo '<input id="volver" type="button" value="Volver" onclick="location.href="index.php"">';
 	exit;
 }
+$sqlTrigger = 'DROP TRIGGER IF EXISTS rellenar';
+mysqli_query($mysqli, $sqlTrigger);
+
+mysqli_query($mysqli, $sql);
+// ...
 
 $result = mysqli_query($mysqli, $sql);
-mysqli_query($mysqli, $sql);
-//include 'Trigger.php';
+
 if(!$result) {
-	die('Invalid query: ' . mysql_error());
-}else{
+	die('Invalid query: ' . mysqli_error($mysqli));
+} else {
 	echo "<div>Pokemon creado correctamente \n";
 	echo '<input id="Ver" type="button" value="Ver Pokemon" onclick="redireccionar()"></div>';
 }
+
+// ...
+
 mysqli_close($mysqli);
 ?>
 
